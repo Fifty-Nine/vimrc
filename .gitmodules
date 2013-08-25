@@ -10,3 +10,7 @@
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
 
+[submodule "bundle/conque-term"]
+	path = bundle/conque-term
+	url = https://github.com/rosenfeld/conque-term
+
