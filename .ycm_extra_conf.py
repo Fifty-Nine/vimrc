@@ -30,7 +30,6 @@
 
 import os
 import ycm_core
-import vcscripts
 
 def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):
   if not working_directory:
@@ -188,9 +187,6 @@ def DirectoryOfThisScript():
   return os.path.dirname( os.path.abspath( __file__ ) ) 
 
 def RelocationDirectory(filename):
-  path = vcscripts.GetWorkspaceRoot(filename)
-  if path is not None:
-    return path + "/Venom/Application/Venom"
   return DirectoryOfThisScript()
 
 def FlagsForFile( filename ):
