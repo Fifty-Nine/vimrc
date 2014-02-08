@@ -1,3 +1,10 @@
+let g:disable_ycm=0
+
+let local_vimrc = expand("$HOME/.vimrc-local")
+if filereadable(local_vimrc)
+  execute 'source '.local_vimrc
+endif
+
 " Force vim
 set nocompatible
 filetype plugin indent on
@@ -62,7 +69,7 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-if v:version > 703 || (v:version == 703 && has('patch584'))
+if !g:disable_ycm && (v:version > 703 || (v:version == 703 && has('patch584')))
   Bundle 'Valloric/YouCompleteMe'
 endif
  
