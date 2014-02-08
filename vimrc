@@ -48,26 +48,7 @@ set backspace=indent,eol,start
 set fileformats=unix,mac,dos
 
 " Highlight lines longer than 80 characters
-
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-" Retab and reformat when writing out files.
-au BufWritePre *.c retab
-au BufWritePre *.c set fileformat=unix
-
-au BufWritePre *.cpp retab
-au BufWritePre *.cpp set fileformat=unix
-
-au BufWritePre *.h retab
-au BufWritePre *.h set fileformat=unix
-
-au BufWritePre *.hpp retab
-au BufWritePre *.hpp set fileformat=unix
-
-au BufWritePre *.tpp retab
-au BufWritePre *.tpp set fileformat=unix
-
-" Don't expand tabs in Makefiles
-au BufNewFile,BufRead Makefile set noexpandtab
 
 " Recognize LLVM
 augroup filetype
@@ -100,5 +81,3 @@ map <F9> :clist<CR>
 map <F10> :clist!<CR>
 map <F12> :make<CR>
 
-let @a='i//==============================================================================/  '
-map . @a
