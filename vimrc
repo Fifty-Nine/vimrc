@@ -68,6 +68,7 @@ endif
  
 Bundle 'scrooloose/syntastic'
 Bundle 'rosenfeld/conque-term'
+Bundle 'godlygeek/csapprox'
 
 " YouCompleteMe settings
 let g:ycm_extra_conf_globlist = [ '*' ]
