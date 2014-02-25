@@ -12,5 +12,8 @@
 
 [submodule "bundle/conque-term"]
 	path = bundle/conque-term
-	url = https://github.com/rosenfeld/conque-term
+	url = https://github.com/Fifty-Nine/conque-term
 
+[submodule "bundle/csapprox"]
+	path = bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
