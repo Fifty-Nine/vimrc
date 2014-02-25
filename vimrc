@@ -47,8 +47,10 @@ set backspace=indent,eol,start
 " Handle mac file formats
 set fileformats=unix,mac,dos
 
-" Highlight lines longer than 80 characters
-au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+if !&diff 
+  " Highlight lines longer than 80 characters
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 " Recognize LLVM
 augroup filetype
