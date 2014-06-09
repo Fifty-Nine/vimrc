@@ -40,7 +40,7 @@ function! s:loadtemplate( filetype )
 		call cursor( y, x )
 	endif
     if search( '#', 'w' )
-        :%s/\\#/\#
+        silent! %s/\\#/\#
     endif
     if search( '\$filename\$', 'w' )
         let fn = expand("%:p")
