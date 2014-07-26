@@ -83,6 +83,8 @@ Bundle 'godlygeek/csapprox'
 let g:ycm_extra_conf_globlist = [ '*' ]
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
+let g:syntastic_cpp_compiler_options = ' -std=c++11 '
+
 " Custom key mappings
 map <F2> :vsplit<CR>:A<CR>
 map <F7> :cprev<CR>
@@ -91,3 +93,6 @@ map <F9> :clist<CR>
 map <F10> :clist!<CR>
 map <F12> :make<CR>
 
+if filereadable("build.ninja")
+  set makeprg=ninja
+endif
