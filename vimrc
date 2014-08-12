@@ -78,6 +78,8 @@ endif
 Bundle 'scrooloose/syntastic'
 Bundle 'rosenfeld/conque-term'
 Bundle 'godlygeek/csapprox'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 " YouCompleteMe settings
 let g:ycm_extra_conf_globlist = [ '*' ]

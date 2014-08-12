@@ -1,19 +1,27 @@
 [submodule "bundle/Vundle"]
 	path = bundle/vundle
-	url = git://github.com/gmarik/vundle.git
+	url = git@github.com:gmarik/vundle.git
 
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe
 
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 
 [submodule "bundle/conque-term"]
 	path = bundle/conque-term
-	url = https://github.com/Fifty-Nine/conque-term
+	url = git@github.com:Fifty-Nine/conque-term
 
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
-	url = https://github.com/godlygeek/csapprox.git
+	url = git@github.com:godlygeek/csapprox.git
+
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git@github.com:godlygeek/tabular
+
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown
