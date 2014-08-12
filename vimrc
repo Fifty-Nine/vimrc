@@ -59,11 +59,14 @@ if !&diff
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-" Recognize LLVM
 augroup filetype
+    " Recognize LLVM
     au! BufRead,BufNewFile *.ll set filetype=llvm
     au! BufRead,BufNewFile *.td set filetype=tablegen
     au! BufRead,BufNewFile *.tpp set filetype=cpp
+    
+    " .md is Markdown, not modula2:
+    au! BufRead,BufNewFile *.md set filetype=markdown
 augroup END
 
 " Vim bundles
