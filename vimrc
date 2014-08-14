@@ -79,7 +79,7 @@ if !g:disable_ycm && (v:version > 703 || (v:version == 703 && has('patch584')))
 endif
  
 Bundle 'scrooloose/syntastic'
-Bundle 'rosenfeld/conque-term'
+Bundle 'Fifty-Nine/conque-term'
 Bundle 'godlygeek/csapprox'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
