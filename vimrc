@@ -26,6 +26,15 @@ nnoremap <silent> <PageDown> <C-D><C-D>
 vnoremap <silent> <PageDown> <C-D><C-D>
 inoremap <silent> <PageDown> <C-\><C-O><C-D><C-\><C-O><C-D>
 
+" Fix PuTTY shift-left/right
+nnoremap <silent> [C <S-Right>
+vnoremap <silent> [C <S-Right>
+inoremap <silent> [C <S-Right>
+
+nnoremap <silent> [D <S-Left>
+vnoremap <silent> [D <S-Left>
+inoremap <silent> [D <S-Left>
+
 " Make home key consider indentation
 function! SmartHome()
   let s:col = col(".")
@@ -59,6 +68,8 @@ if !&diff
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+set nofoldenable
+
 augroup filetype
     " Recognize LLVM
     au! BufRead,BufNewFile *.ll set filetype=llvm
@@ -67,6 +78,11 @@ augroup filetype
     
     " .md is Markdown, not modula2:
     au! BufRead,BufNewFile *.md set filetype=markdown
+
+    " .m -> ObjC
+    " .mm -> ObjC++
+    au! BufRead,BufNewFile *.m set filetype=objc
+    au! BufRead,BufNewFile *.mm set filetype=objcpp
 augroup END
 
 " Vim bundles
