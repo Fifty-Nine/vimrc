@@ -1,4 +1,4 @@
-let g:disable_ycm=0
+let g:disable_ycm=1
 
 let local_vimrc = expand("$HOME/.vimrc-local")
 if filereadable(local_vimrc)
@@ -65,6 +65,7 @@ set fileformats=unix,mac,dos
 
 if !&diff 
   " Highlight lines longer than 80 characters
+  au BufWinEnter * let w:m1=matchadd('ErrorMsg', '\v\s+$', -1)
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
@@ -99,6 +100,7 @@ Bundle 'Fifty-Nine/conque-term'
 Bundle 'godlygeek/csapprox'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-fugitive'
 
 " YouCompleteMe settings
 let g:ycm_extra_conf_globlist = [ '*' ]
