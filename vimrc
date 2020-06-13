@@ -100,6 +100,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'chr4/nginx.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'embear/vim-localvimrc'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 let g:localvimrc_ask=0
 let g:localvimrc_sandbox=0
