@@ -2,11 +2,6 @@
 	path = bundle/vundle
 	url = git@github.com:gmarik/vundle.git
 
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe
-	ignore = untracked
-
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git

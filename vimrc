@@ -1,5 +1,3 @@
-let g:disable_ycm=0
-
 let local_vimrc = expand("$HOME/.vimrc-local")
 if filereadable(local_vimrc)
   execute 'source '.local_vimrc
@@ -90,19 +88,11 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-if !g:disable_ycm && (v:version > 703 || (v:version == 703 && has('patch584')))
-  Bundle 'Valloric/YouCompleteMe'
-endif
- 
 Bundle 'scrooloose/syntastic'
 Bundle 'Fifty-Nine/conque-term'
 Bundle 'godlygeek/csapprox'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
-
-" YouCompleteMe settings
-let g:ycm_extra_conf_globlist = [ '*' ]
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
