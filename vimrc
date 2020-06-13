@@ -89,12 +89,12 @@ augroup END
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/syntastic'
-Bundle 'Fifty-Nine/conque-term'
-Bundle 'godlygeek/csapprox'
-Bundle 'godlygeek/tabular'
-Bundle 'plasticboy/vim-markdown'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/syntastic'
+Plugin 'Fifty-Nine/conque-term'
+Plugin 'godlygeek/csapprox'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
