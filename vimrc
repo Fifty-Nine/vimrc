@@ -101,6 +101,7 @@ Plugin 'chr4/nginx.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'embear/vim-localvimrc'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'Fifty-Nine/CurtineIncSw.vim'
 
 let g:localvimrc_ask=0
 let g:localvimrc_sandbox=0
@@ -108,7 +109,7 @@ let g:localvimrc_sandbox=0
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
 " Custom key mappings
-map <F2> :vsplit<CR>:A<CR>
+map <F2> :vsplit<CR>:call CurtineIncSw()<CR>
 map <F7> :cprev<CR>
 map <F8> :cnext<CR>
 map <F9> :clist<CR>

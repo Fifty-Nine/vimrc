@@ -33,3 +33,6 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/CurtineIncSw.vim"]
+	path = bundle/CurtineIncSw.vim
+	url = git@github.com:Fifty-Nine/CurtineIncSw.vim
