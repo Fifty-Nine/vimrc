@@ -98,6 +98,7 @@ Plugin 'godlygeek/csapprox'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'chr4/nginx.vim'
+Plugin 'tpope/vim-fugitive'
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
