@@ -83,6 +83,8 @@ augroup filetype
     " .mm -> ObjC++
     au! BufRead,BufNewFile *.m set filetype=objc
     au! BufRead,BufNewFile *.mm set filetype=objcpp
+
+    au! BufRead,BufNewFile nginx/*.conf set filetype=nginx
 augroup END
 
 " Vim bundles
@@ -95,6 +97,7 @@ Plugin 'Fifty-Nine/conque-term'
 Plugin 'godlygeek/csapprox'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'chr4/nginx.vim'
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
