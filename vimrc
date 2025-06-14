@@ -92,8 +92,6 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
-Plugin 'scrooloose/syntastic'
-Plugin 'Fifty-Nine/conque-term'
 Plugin 'godlygeek/csapprox'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
