@@ -2,14 +2,6 @@
 	path = bundle/vundle
 	url = git@github.com:gmarik/vundle.git
 
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
-
-[submodule "bundle/conque-term"]
-	path = bundle/conque-term
-	url = git@github.com:Fifty-Nine/conque-term
-
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = git@github.com:godlygeek/csapprox.git
