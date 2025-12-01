@@ -63,6 +63,7 @@ set fileformats=unix,mac,dos
 
 if !&diff 
   " Highlight lines longer than 80 characters
+  au BufWinEnter * let w:m1=matchadd('ErrorMsg', '\v\s+$', -1)
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 else
   set noreadonly
@@ -108,6 +109,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
 " Custom key mappings
 map <F2> :vsplit<CR>:call CurtineIncSw()<CR>
+map <F3> :split<CR>:call CurtineIncSw()<CR>
 map <F7> :cprev<CR>
 map <F8> :cnext<CR>
 map <F9> :clist<CR>
@@ -117,3 +119,9 @@ map <F12> :make<CR>
 if filereadable("build.ninja")
   set makeprg=ninja
 endif
+
+if !empty(glob("*.ino"))
+  let &makeprg='arduino-cli compile -v -j0'
+endif
+
+noremap <C-e> <C-w>

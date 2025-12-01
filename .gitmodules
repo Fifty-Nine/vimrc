@@ -28,3 +28,6 @@
 [submodule "bundle/CurtineIncSw.vim"]
 	path = bundle/CurtineIncSw.vim
 	url = git@github.com:Fifty-Nine/CurtineIncSw.vim
+[submodule "bundle/vim-caddyfile"]
+	path = bundle/vim-caddyfile
+	url = https://github.com/isobit/vim-caddyfile.git
